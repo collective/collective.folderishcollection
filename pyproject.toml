@@ -164,3 +164,6 @@ source_pkgs = ["collective.folderishcollection", "tests"]
 branch = true
 parallel = true
 omit = ["src/collective/folderishcollection/locales/*.py"]
+
+[tool.zest.releaser]
+python-file-with-version = "src/collective/folderishcollection/__init__.py"
