@@ -8,3 +8,10 @@
 -->
 
 <!-- towncrier release notes start -->
+
+## 1.0.0 (2025-07-22)
+
+
+### Internal:
+
+- Initial release @erral [#release](https://github.com/collective/collective.folderishcollection/issues/release)
