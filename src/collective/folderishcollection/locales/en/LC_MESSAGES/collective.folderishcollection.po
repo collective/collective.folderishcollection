@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-25 17:12+0000\n"
+"POT-Creation-Date: 2025-07-24 12:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,3 +13,19 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.folderishcollection\n"
+
+#: collective/folderishcollection/profiles.zcml:13
+msgid "Package to configure a new collective.folderishcollection site"
+msgstr ""
+
+#: collective/folderishcollection/profiles.zcml:21
+msgid "Uninstall collective.folderishcollection setup."
+msgstr ""
+
+#: collective/folderishcollection/profiles.zcml:13
+msgid "collective.folderishcollection: Install"
+msgstr ""
+
+#: collective/folderishcollection/profiles.zcml:21
+msgid "collective.folderishcollection: Uninstall"
+msgstr ""
