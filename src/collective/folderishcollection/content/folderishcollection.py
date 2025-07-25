@@ -1,4 +1,3 @@
-from plone.app.contenttypes import _
 from plone.app.contenttypes.behaviors.collection import ICollection
 from plone.dexterity.content import Container
 from zope.component import getMultiAdapter
@@ -12,9 +11,9 @@ from zope.schema.interfaces import IVocabularyFactory
 class IFolderishCollection(Interface):
     """Marker interface"""
 
+
 @implementer(IFolderishCollection, ICollection)
 class FolderishCollection(Container):
-
     def results(
         self,
         batch=True,
@@ -27,9 +26,7 @@ class FolderishCollection(Container):
     ):
         if custom_query is None:
             custom_query = {}
-        querybuilder = getMultiAdapter(
-            (self, getRequest()), name="querybuilderresults"
-        )
+        querybuilder = getMultiAdapter((self, getRequest()), name="querybuilderresults")
         sort_order = "reverse" if self.sort_reversed else "ascending"
         if not b_size:
             b_size = self.item_count
@@ -64,4 +61,3 @@ class FolderishCollection(Container):
             _mapping[field.value] = (field.value, field.title)
         ret = [_mapping[field] for field in self.customViewFields]
         return ret
-

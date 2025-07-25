@@ -1,10 +1,15 @@
-<?xml version="1.0"?>
-<object name="Collection" meta_type="Dexterity FTI" i18n:domain="plone"
-    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+<?xml version="1.0" encoding="utf-8"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        meta_type="Dexterity FTI"
+        name="Collection"
+        i18n:domain="plone"
+>
   <property name="filter_content_types">False</property>
   <property name="klass">collective.folderishcollection.content.folderishcollection.FolderishCollection</property>
-  <property name="behaviors" purge="false">
-    <element value="plone.collection"/>
-    <element value="plone.constraintypes"/>
+  <property name="behaviors"
+            purge="false"
+  >
+    <element value="plone.collection" />
+    <element value="plone.constraintypes" />
   </property>
 </object>

@@ -46,8 +46,7 @@ site_id = "Plone"
 payload = {
     "title": "collective.folderishcollection",
     "profile_id": _DEFAULT_PROFILE,
-"distribution_name": "classic",
-
+    "distribution_name": "classic",
     "setup_content": False,
     "default_language": "en",
     "portal_timezone": "UTC",
@@ -63,5 +62,7 @@ if site_id not in app.objectIds():
     transaction.commit()
 
     portal_setup: SetupTool = site.portal_setup
-    portal_setup.runAllImportStepsFromProfile("profile-collective.folderishcollection:default")
+    portal_setup.runAllImportStepsFromProfile(
+        "profile-collective.folderishcollection:default"
+    )
     transaction.commit()
